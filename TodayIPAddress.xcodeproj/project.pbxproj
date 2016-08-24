@@ -14,6 +14,10 @@
 		B849C3271AD5E48500824202 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B849C3261AD5E48500824202 /* Images.xcassets */; };
 		B849C32A1AD5E48500824202 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B849C3281AD5E48500824202 /* LaunchScreen.xib */; };
 		B849C3361AD5E48500824202 /* TodayIPAddressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B849C3351AD5E48500824202 /* TodayIPAddressTests.m */; };
+		B849C35D1AD5E84000824202 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B849C35C1AD5E84000824202 /* NotificationCenter.framework */; };
+		B849C3631AD5E84000824202 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B849C3621AD5E84000824202 /* TodayViewController.m */; };
+		B849C3651AD5E84000824202 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B849C3641AD5E84000824202 /* MainInterface.storyboard */; };
+		B849C3681AD5E84000824202 /* NC IP.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B849C35A1AD5E84000824202 /* NC IP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = B849C3151AD5E48500824202;
 			remoteInfo = TodayIPAddress;
 		};
+		B849C3661AD5E84000824202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B849C30E1AD5E48500824202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B849C3591AD5E84000824202;
+			remoteInfo = "NC IP";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B849C36C1AD5E84000824202 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B849C3681AD5E84000824202 /* NC IP.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B849C3161AD5E48500824202 /* TodayIPAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayIPAddress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +65,12 @@
 		B849C32F1AD5E48500824202 /* TodayIPAddressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayIPAddressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B849C3341AD5E48500824202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B849C3351AD5E48500824202 /* TodayIPAddressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayIPAddressTests.m; sourceTree = "<group>"; };
+		B849C35A1AD5E84000824202 /* NC IP.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NC IP.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B849C35C1AD5E84000824202 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B849C3601AD5E84000824202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B849C3611AD5E84000824202 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		B849C3621AD5E84000824202 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		B849C3641AD5E84000824202 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B849C3571AD5E84000824202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B849C35D1AD5E84000824202 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +104,8 @@
 			children = (
 				B849C3181AD5E48500824202 /* TodayIPAddress */,
 				B849C3321AD5E48500824202 /* TodayIPAddressTests */,
+				B849C35E1AD5E84000824202 /* NC IP */,
+				B849C35B1AD5E84000824202 /* Frameworks */,
 				B849C3171AD5E48500824202 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +115,7 @@
 			children = (
 				B849C3161AD5E48500824202 /* TodayIPAddress.app */,
 				B849C32F1AD5E48500824202 /* TodayIPAddressTests.xctest */,
+				B849C35A1AD5E84000824202 /* NC IP.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +161,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B849C35B1AD5E84000824202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B849C35C1AD5E84000824202 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B849C35E1AD5E84000824202 /* NC IP */ = {
+			isa = PBXGroup;
+			children = (
+				B849C3611AD5E84000824202 /* TodayViewController.h */,
+				B849C3621AD5E84000824202 /* TodayViewController.m */,
+				B849C3641AD5E84000824202 /* MainInterface.storyboard */,
+				B849C35F1AD5E84000824202 /* Supporting Files */,
+			);
+			path = "NC IP";
+			sourceTree = "<group>";
+		};
+		B849C35F1AD5E84000824202 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B849C3601AD5E84000824202 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +198,12 @@
 				B849C3121AD5E48500824202 /* Sources */,
 				B849C3131AD5E48500824202 /* Frameworks */,
 				B849C3141AD5E48500824202 /* Resources */,
+				B849C36C1AD5E84000824202 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B849C3671AD5E84000824202 /* PBXTargetDependency */,
 			);
 			name = TodayIPAddress;
 			productName = TodayIPAddress;
@@ -157,21 +228,43 @@
 			productReference = B849C32F1AD5E48500824202 /* TodayIPAddressTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B849C3591AD5E84000824202 /* NC IP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B849C36B1AD5E84000824202 /* Build configuration list for PBXNativeTarget "NC IP" */;
+			buildPhases = (
+				B849C3561AD5E84000824202 /* Sources */,
+				B849C3571AD5E84000824202 /* Frameworks */,
+				B849C3581AD5E84000824202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NC IP";
+			productName = "NC IP";
+			productReference = B849C35A1AD5E84000824202 /* NC IP.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B849C30E1AD5E48500824202 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Lustin' Joew";
 				TargetAttributes = {
 					B849C3151AD5E48500824202 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = VM5XXWMN9Y;
 					};
 					B849C32E1AD5E48500824202 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = B849C3151AD5E48500824202;
+					};
+					B849C3591AD5E84000824202 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = VM5XXWMN9Y;
 					};
 				};
 			};
@@ -190,6 +283,7 @@
 			targets = (
 				B849C3151AD5E48500824202 /* TodayIPAddress */,
 				B849C32E1AD5E48500824202 /* TodayIPAddressTests */,
+				B849C3591AD5E84000824202 /* NC IP */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +303,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B849C3581AD5E84000824202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B849C3651AD5E84000824202 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +335,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B849C3561AD5E84000824202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B849C3631AD5E84000824202 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = B849C3151AD5E48500824202 /* TodayIPAddress */;
 			targetProxy = B849C3301AD5E48500824202 /* PBXContainerItemProxy */;
+		};
+		B849C3671AD5E84000824202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B849C3591AD5E84000824202 /* NC IP */;
+			targetProxy = B849C3661AD5E84000824202 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -284,6 +399,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -299,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,8 +465,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TodayIPAddress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +477,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TodayIPAddress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -379,6 +499,7 @@
 				);
 				INFOPLIST_FILE = TodayIPAddressTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayIPAddress.app/TodayIPAddress";
 			};
@@ -394,8 +515,39 @@
 				);
 				INFOPLIST_FILE = TodayIPAddressTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayIPAddress.app/TodayIPAddress";
+			};
+			name = Release;
+		};
+		B849C3691AD5E84000824202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NC IP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.TodayIPAddress.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B849C36A1AD5E84000824202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "NC IP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.TodayIPAddress.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -418,6 +570,7 @@
 				B849C33B1AD5E48500824202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B849C33C1AD5E48500824202 /* Build configuration list for PBXNativeTarget "TodayIPAddressTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +579,16 @@
 				B849C33E1AD5E48500824202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B849C36B1AD5E84000824202 /* Build configuration list for PBXNativeTarget "NC IP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B849C3691AD5E84000824202 /* Debug */,
+				B849C36A1AD5E84000824202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
