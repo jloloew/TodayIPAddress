@@ -17,7 +17,7 @@
 		B849C35D1AD5E84000824202 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B849C35C1AD5E84000824202 /* NotificationCenter.framework */; };
 		B849C3631AD5E84000824202 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B849C3621AD5E84000824202 /* TodayViewController.m */; };
 		B849C3651AD5E84000824202 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B849C3641AD5E84000824202 /* MainInterface.storyboard */; };
-		B849C3681AD5E84000824202 /* NC IP.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B849C35A1AD5E84000824202 /* NC IP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B849C3681AD5E84000824202 /* NC IP.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B849C35A1AD5E84000824202 /* NC IP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B849C36C1AD5E84000824202 /* Embed App Extensions */ = {
+		B849C36C1AD5E84000824202 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B849C3681AD5E84000824202 /* NC IP.appex in Embed App Extensions */,
+				B849C3681AD5E84000824202 /* NC IP.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -198,7 +198,7 @@
 				B849C3121AD5E48500824202 /* Sources */,
 				B849C3131AD5E48500824202 /* Frameworks */,
 				B849C3141AD5E48500824202 /* Resources */,
-				B849C36C1AD5E84000824202 /* Embed App Extensions */,
+				B849C36C1AD5E84000824202 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -251,7 +251,7 @@
 		B849C30E1AD5E48500824202 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "Lustin' Joew";
 				TargetAttributes = {
 					B849C3151AD5E48500824202 = {
@@ -270,7 +270,7 @@
 			};
 			buildConfigurationList = B849C3111AD5E48500824202 /* Build configuration list for PBXProject "TodayIPAddress" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -400,6 +400,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -425,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -455,6 +456,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -473,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,7 +552,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NC IP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.TodayIPAddress.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,7 +565,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "NC IP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justinloew.TodayIPAddress.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
